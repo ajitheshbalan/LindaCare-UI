@@ -1,0 +1,17 @@
+<a
+      class="list-group-item clearfix" 
+      [routerLink]="[index]"
+      routerLinkActive="active">
+      <div class="pull-left">
+        <h3 class="list-group-item-heading"><b>{{ order.currencyFrom }}</b>&ensp;&ensp;&ensp;<span class="glyphicon glyphicon-menu-right"></span>&ensp;&ensp;&ensp;<b>{{order.currencyTo}}</b></h3>
+        <h4 class="list-group-item-text">({{order.amountSell}})&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; ({{order.amountBuy}})</h4>
+        <h6 class="list-group-item-text"><i>{{ order.timePlaced }}</i></h6>
+      </div>
+      <span class="pull-right">
+        <img
+          [src]="order.imagePath"
+          alt="{{ order.originatingCountry }}"
+          class="img-responsive"
+          style="max-height: 50px;">
+      </span>
+    </a>

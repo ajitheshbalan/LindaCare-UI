@@ -1,0 +1,64 @@
+<div class="row">
+  <div class="col-xs-12">
+    <div class="pull-right">
+    <img src="{{order.imagePath}}" alt="" class="img-responsive" style="max-height:140px">
+  </div>
+</div>
+</div>
+<div class="row">
+  <div class="col-xs-5">
+    <h1>{{order.currencyFrom}}</h1>
+  </div>
+  <div class="col-xs-2">
+    <h2><span class="glyphicon glyphicon-triangle-right"></span></h2>
+  </div>
+  <div class="col-xs-5">
+      <div class="pull-right">
+        <h1>{{order.currencyTo}}</h1>
+      </div>
+  </div>
+  </div>
+  <div class="row">
+  <div class="col-xs-6">
+    <div>
+      <h4><b>Amount Sell</b></h4>
+    </div>
+    <div >
+      <h4>{{order.amountSell}}</h4>
+    </div>
+    <div>
+        <h4><b>Rate</b></h4>
+      </div>
+      <div >
+        <h4>{{order.rate}}</h4>
+      </div>
+    <div>
+      <h4><b>User Id</b></h4>
+    </div>
+    <div>
+        <h4>{{order.userId}}</h4>
+      </div>
+  </div>
+  <div class="col-xs-6">
+    <div class="pull-right">
+      <div>
+        <h4><b>Amount Buy</b></h4>
+      </div>
+      <div>
+        <h4>{{order.amountBuy}}</h4>
+      </div>
+      <div>
+          <h4><b>Originating Country</b></h4>
+        </div>
+        <div >
+          <h4>{{order.originatingCountry}}</h4>
+        </div>
+      <div>
+          <h4><b>Placed On</b></h4>
+        </div>
+        <div>
+            <h4>{{order.timePlaced}}</h4>
+          </div>
+          </div>
+    </div>
+</div>
